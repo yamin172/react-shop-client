@@ -15,7 +15,7 @@ const AddProduct = () => {
           price: data.price,
           imageURL: imageURL,
         };
-        const url = `http://localhost:5055/addProduct`;
+        const url = `https://polar-coast-16446.herokuapp.com/addProduct`;
         
         console.log(productData);
 
