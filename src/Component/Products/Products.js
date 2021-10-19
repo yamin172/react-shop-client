@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Products = (props) => {
     const {name, imageURL, price} = props.product;
     return (
-            <div className="col-md-3 my-3">
+            <div className="col-md-3 my-4 align-items-center">
                 <Card style={{ width: "16rem" }} className="shadow border-0">
                 <Card.Img variant="top" src={imageURL} className="p-3" style={{ backgroundColor : "#f7f7f7", height:"200px" }}/>
                 <Card.Body>

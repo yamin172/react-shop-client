@@ -1,11 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './Order.css';
 
 const Orders = () => {
     return (
-        <Container>
-            <p>this is orders</p>
-        </Container>
+        <>
+            <Container className="m-auto order_height">
+                <h1>this is orders</h1>
+            </Container>
+        </>
     );
 };
 

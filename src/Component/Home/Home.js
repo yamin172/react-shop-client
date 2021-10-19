@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
+import Cards from '../Cards/Cards';
 import Products from '../Products/Products';
+import Slider from '../Slider/Slider';
 
 const Home = () => {
     const [products, setProducts] = useState([])
@@ -10,13 +12,17 @@ const Home = () => {
         .then(data => setProducts(data))
     }, [])
     return (
-        <Container className="mt-5">
-            <div className="row">
-                {
-                    products.map((product) => (<Products product={product} key={product.id}/>))
-                }
-            </div>
-        </Container>
+        <>
+            <Container className="mt-5">
+                <Slider />
+                <Cards />
+                <div className="row mt-3">
+                    {
+                        products.map((product) => (<Products product={product} key={product.id}/>))
+                    }
+                </div>
+            </Container>
+        </>
     );
 };
 
